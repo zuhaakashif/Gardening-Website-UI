@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Forum</title>
+    <link rel="stylesheet" href="com.css">
+</head>
+<body>
+    <header>
+        <h1>Community Forum</h1>
+        <button id="logout-btn">Logout</button>
+    </header>
+    <div id="forum-container">
+        <h2>Discussion Board</h2>
+        <div id="posts-container"></div>
+        <form id="post-form">
+            <textarea id="post-content" placeholder="Share your gardening tips or success stories..."></textarea>
+            <button type="submit">Post</button>
+        </form>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-firestore.js"></script>
+    <script src="com.js"></script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+*{/*selects all elements for the whole css overall*/
+    margin: 0;/*used to create space around elements outside the border, top and bottom margin is 0*/
+    padding: 0;/*space between the border and the content,set to 0*/
+    font-family: 'Oswald', sans-serif;/*the font for the whole page*/
+}
+body{
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(images/fiction4.jpg) ;
+    background-size: cover;/*specify the size of background images which is cover*/
+    background-position: center center;
+    height: 100vh;/*vh is viewport height*/
+    overflow-x: hidden;/* Hide horizontal scrollbar */
+    
+}
+.wrapper{/*styling the div class wrapper*/
+    float: right;/*content to the right side os the page*/
+    list-style-type: none;/*specifies the type of list item marker here none applied to them will not be announced as a list*/
+    margin-top: 40px;/*set the top margin of an element to 40px*/
+    z-index: 1;/*used to overcome overlapping*/
+    position: sticky;/*positioned based on the user's scroll position*/
+    top: 0;/*top of the page set to 0*/
+    background-color: transparent;/*background is transparent*/
+    font-style: bold;/*font style is bold*/
+   
+}
+.wrapper ul{/* styling the wrapper section and the sub section ul*/
+    list-style: none;/*specifies the type of list item marker here none applied to them will not be announced as a list*/
+    margin-top: 2%;/*set the top margin of an element to 2%*/
+    display: inline-block;/*used so the links are shown side by side in a horizontal postion*/
+   
+}
+ul{
+     float: right;/*content to the right side os the page*/
+    list-style-type: none;/*specifies the type of list item marker here none applied to them will not be announced as a list*/
+    margin-top: 25px;/*set the top margin of an element to 25px*/
+   
+  }
+  ul li{/*styling the li tag in the ul*/
+    display: inline-block;/*used so the links are shown side by side in a horizontal postion*/
+   
+ }
+ul li a{
+    /*styling the a tag */
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;/* set to top 5 pixels and right 20 pixels*/
+    border: 1px solid transparent;/* transparent border creater so the background can be seen,solid border,set to 1 pixels*/
+    transition: 0.6s ease;/*transition duration, ease used to specifies a transition effect with a slow start, then fast, then end slowly (this is default)*/
+}
+ul li.active a{/*active used to select and style the hyperlink in the li section which is in the ul section.*/
+    background-color: #fff;
+    color: #000;
+}
+
+
+ul li a:hover{/*hover used to select elements when you mouse over them*/
+    background-color:#fff;
+    color: #000;
+}
+.wrapper ul li{/*styling the wrapper section and its sub section ul and its sub section li*/
+    background: transparent;/*the background is transparent so anything behind it can be seen*/
+    width: 170px;/*width set to 170 pixels*/
+    border: 1px solid transparent;/* transparent border creater so the background can be seen,solid border,set to 1 pixels*/
+    height: 50px;/*height set to 50 pixels*/
+    line-height: 50px;/*specifies the height of a line here it is set to 50 pixels*/
+    text-align: center;/*the alingnment of the text is set to the center*/
+    float: left;/*content to the left side os the page if it was right the order of the boxes would be changed*/
+    color: #fff;
+    font-size: 17px;/*font size is 17 pixels*/
+    position: relative;/*specify a length relative to another length property*/    
+}
+   
+
+.wrapper ul ul{/*styling the wrapper section and its sub section ul and its sub section ul*/
+    display: none;/*not displaying the drop down*/
+}
+
+.wrapper ul li:hover>ul{/*displays drop down when mosue is on genre*/
+    display: block;
+}
+.container{/*styling the section container*/
+    padding: 6% 25%;/* set to top 6% pixels and right 25% pixels*/
+    width: 80%;/*width set to 80% pixels*/
+    top: 10vh;/*top of the page to 10 viewport hegith*/
+    margin: 20px auto;/* auto horizontally center the element within its container*/
+   
+}
+  
+h1{/*styling the main heading*/
+    position: absolute;/*units are fixed and a length expressed in any of these will appear as exactly that size*/
+    top: 10%;/*top of the page to 10%*/
+    right: 80%;/*right of the page set to 80%*/
+    border-left: 5px solid #e6dc53;/*side border*/
+    font-size: 40px;;/*font sixe set to 40 pixels*/
+    color: #fff;
+
+}
+    
+
+.book{
+    width: 70%;/*width set to 70%*/
+    float: left;/*content to the left of the page*/
+    position: relative;/*specify a length relative to another length property*/
+    left: -10%;/*content to -10% of the page*/
+    top: 30px;/*content to top 30 pixels*/
+    background: transparent;
+    margin: 5px;/*margin set to 5 pixels*/
+    padding: 10px;/*space between the border and the content,set to 10 pixels*/
+}
+.icon{/*styling sub section of book of class icon*/
+    width: 15%;/*width set to 15%*/
+    float: left;/*content to the left of the page*/
+    line-height: 100px;/*specifies the height of a line here it is set to 100 pixels*/
+}
+  
+.content{/*styling the sub section of book of class content*/
+    display: grid;/*creates a grid container that hold content*/
+    color: #ffffff;
+	position: relative;/*specify a length relative to another length property*/
+    right: -14%;/*content to the -13% to right*/
+    font-size: 19px;
+
+}
+    
+   
+button{/*styling the button*/
+    background: #e7d39a;
+    border-radius: 7px;/*creates a curved button from the sides*/
+    padding: 6px 6px;/* set to top 6 pixels and right 6pixels*/
+    position: absolute;/*units are fixed and a length expressed in any of these will appear as exactly that size*/
+    bottom: -70%;/*postion of button to buttom-70%*/
+    right: 20%;/*postion of button to the right 20%*/
+    color: antiquewhite;
+}
+.button a{/*styling button hyperlink*/
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid transparent;/* transparent border creater so the background can be seen,solid border,set to 1 pixels*/
+    transition: 0.6s ease;/*transition duration, ease used to specifies a transition effect with a slow start, then fast, then end slowly (this is default)*/
+}
+.button a:hover{/*styling button hyperlink hover*/
+    background-color:#fff;
+    color: #000;
+}

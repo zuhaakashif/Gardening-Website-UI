@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ======= Styles ====== -->
+    <link rel="stylesheet" href="dash.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                        
+                            <ion-icon name=""></ion-icon>
+                        </span>
+                        <span class="title">FloraNexus</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="home.html">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="title">Home</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="dash.html">
+                        <span class="icon">
+
+                            <ion-icon name="person"></ion-icon>
+                        </span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="cf.html">
+                        <span class="icon">
+                            <ion-icon name="people-outline"></ion-icon>
+                        </span>
+                        <span class="title">Community Forum</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="resources.html">
+                        <span class="icon">
+                            <ion-icon name="chatbubble-outline"></ion-icon>
+                        </span>
+                        <span class="title">Resource Library</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="calendar.html">
+                        <span class="icon">
+                            <ion-icon name="help-outline"></ion-icon>
+                        </span>
+                        <span class="title">Event Calander</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="ps.html">
+                        <span class="icon">
+                            <ion-icon name="settings-outline"></ion-icon>
+                        </span>
+                        <span class="title">Project Showcase</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="m.html">
+                        <span class="icon">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                        </span>
+                        <span class="title">Market</span>
+                    </a>
+                </li>
+
+            
+            </ul>
+        </div>
+
+        <!-- ========================= Main ==================== -->
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+            </div>
+        <div>
+
+    <!--------------------------------------------------------------------->
+    <div class="dashboard">
+        <div class="profile">
+            <h2>Profile Management</h2>
+            <!-- Profile management options go here -->
+            <button id="editProfileBtn">Edit Profile</button>
+            <button id="changePasswordBtn">Change Password</button>
+        </div>
+        <div class="resources">
+            <h2>Saved Resources</h2>
+            <!-- List of saved resources goes here -->
+            <ul id="savedResourcesList">
+                <li><a href="#">Resource 1</a></li>
+                <li><a href="#">Resource 2</a></li>
+                <li><a href="#">Resource 3</a></li>
+                <!-- Add more resources as needed -->
+            </ul>
+        </div>
+        <div class="community-involvement">
+            <h2>Community Involvement</h2>
+            <!-- Community involvement tracking goes here -->
+            <p>Total Community Garden Hours: <span id="communityHours">10 hours</span></p>
+            <p>Total Urban Farming Activities: <span id="urbanFarmingActivities">5 activities</span></p>
+        </div>
+    </div>
+
+    <h2 class="chart-heading">Community Involovement</h2>
+    <div class="programming-stats">
+      <div class="chart-container">
+        <canvas class="my-chart"></canvas>
+      </div>
+
+      <div class="details">
+        <ul></ul>
+      </div>
+    </div>
+
+
+        
+            
+
+    <!-- =========== Scripts =========  -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="dash.js"></script>
+
+    <!-- ====== ionicons ======= -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
